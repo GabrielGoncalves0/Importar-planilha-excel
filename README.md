@@ -91,15 +91,14 @@ git clone https://github.com/seu-usuario/Importacao-Planilhas-Excel.git
 Crie seu banco de dados e configure a aplicação com os dados correspondentes:
 
 ```javascript
-"ConnectionStrings": {
-  "DefaultConnection": "Server=localhost; Database=ImportacaoDB; User Id=sa;Password=senha"
-}
-
+  "ConnectionStrings": {
+    "DefaultConnection": "server=name; database=name; trusted_connection=true; trustservercertificate=true"
+  }
 ```
 
 ### 3. **Configuração do Projeto**
 
-**No diretório do projeto instale as dependências do projeto, execute **
+**No diretório do projeto instale as dependências do projeto, execute**
 ```sh
 dotnet restore
 ```
@@ -113,3 +112,31 @@ dotnet ef database update
 ```sh
 dotnet run
 ```
+---
+
+### 4. **Utilize o Sistema**
+
+- Faça o upload de um arquivo Excel com os dados que você deseja importar.
+- Verifique se a importação foi realizada com sucesso.
+- Visualize os dados e, se necessário, exporte-os de volta para Excel.
+
+---
+
+## Exemplo de Planilha Excel 📑
+
+Abaixo está um exemplo da planilha que você pode usar para testar o sistema de importação:
+
+- **Exemplo de Planilha:** [Teste-importação.xlsx](https://github.com/user-attachments/files/18312041/Teste-importacao.xlsx)
+
+---
+
+## Contribuindo 🤝
+
+Contribuições são sempre bem-vindas! Se você tiver sugestões ou melhorias para este projeto, sinta-se à vontade para:
+
+1. **Abrir uma Issue**: Relate problemas ou faça sugestões para melhorias.
+2. **Enviar um Pull Request**: Se você implementou uma melhoria ou correção, envie seu pull request para revisão.
+
+Fique à vontade para contribuir e vamos construir um projeto melhor juntos!
+
+---
